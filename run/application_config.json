@@ -1,0 +1,1201 @@
+{
+  "config": {
+    "0": "{",
+    "1": "\"",
+    "2": "c",
+    "3": "o",
+    "4": "r",
+    "5": "s",
+    "6": "\"",
+    "7": ":",
+    "8": "{",
+    "9": "\"",
+    "10": "o",
+    "11": "r",
+    "12": "i",
+    "13": "g",
+    "14": "i",
+    "15": "n",
+    "16": "\"",
+    "17": ":",
+    "18": "\"",
+    "19": "*",
+    "20": "\"",
+    "21": ",",
+    "22": "\"",
+    "23": "a",
+    "24": "l",
+    "25": "l",
+    "26": "o",
+    "27": "w",
+    "28": "M",
+    "29": "e",
+    "30": "t",
+    "31": "h",
+    "32": "o",
+    "33": "d",
+    "34": "s",
+    "35": "\"",
+    "36": ":",
+    "37": "\"",
+    "38": "G",
+    "39": "E",
+    "40": "T",
+    "41": ",",
+    "42": " ",
+    "43": "P",
+    "44": "U",
+    "45": "T",
+    "46": ",",
+    "47": " ",
+    "48": "P",
+    "49": "O",
+    "50": "S",
+    "51": "T",
+    "52": ",",
+    "53": " ",
+    "54": "D",
+    "55": "E",
+    "56": "L",
+    "57": "E",
+    "58": "T",
+    "59": "E",
+    "60": ",",
+    "61": " ",
+    "62": "P",
+    "63": "A",
+    "64": "T",
+    "65": "C",
+    "66": "H",
+    "67": "\"",
+    "68": "}",
+    "69": ",",
+    "70": "\"",
+    "71": "k",
+    "72": "e",
+    "73": "y",
+    "74": "s",
+    "75": "\"",
+    "76": ":",
+    "77": "\"",
+    "78": "g",
+    "79": "j",
+    "80": "k",
+    "81": "f",
+    "82": "l",
+    "83": "d",
+    "84": "s",
+    "85": "i",
+    "86": "f",
+    "87": "j",
+    "88": "e",
+    "89": "r",
+    "90": "k",
+    "91": "f",
+    "92": "h",
+    "93": "s",
+    "94": "d",
+    "95": "j",
+    "96": "k",
+    "97": "a",
+    "98": "h",
+    "99": "f",
+    "100": "u",
+    "101": "i",
+    "102": "d",
+    "103": "s",
+    "104": "\"",
+    "105": ",",
+    "106": "\"",
+    "107": "c",
+    "108": "l",
+    "109": "u",
+    "110": "s",
+    "111": "t",
+    "112": "e",
+    "113": "r",
+    "114": "\"",
+    "115": ":",
+    "116": "{",
+    "117": "\"",
+    "118": "l",
+    "119": "i",
+    "120": "s",
+    "121": "t",
+    "122": "e",
+    "123": "n",
+    "124": "\"",
+    "125": ":",
+    "126": "{",
+    "127": "\"",
+    "128": "p",
+    "129": "o",
+    "130": "r",
+    "131": "t",
+    "132": "\"",
+    "133": ":",
+    "134": "7",
+    "135": "0",
+    "136": "0",
+    "137": "1",
+    "138": ",",
+    "139": "\"",
+    "140": "h",
+    "141": "o",
+    "142": "s",
+    "143": "t",
+    "144": "n",
+    "145": "a",
+    "146": "m",
+    "147": "e",
+    "148": "\"",
+    "149": ":",
+    "150": "\"",
+    "151": "0",
+    "152": ".",
+    "153": "0",
+    "154": ".",
+    "155": "0",
+    "156": ".",
+    "157": "0",
+    "158": "\"",
+    "159": "}",
+    "160": "}",
+    "161": ",",
+    "162": "\"",
+    "163": "m",
+    "164": "u",
+    "165": "l",
+    "166": "t",
+    "167": "i",
+    "168": "p",
+    "169": "a",
+    "170": "r",
+    "171": "t",
+    "172": "\"",
+    "173": ":",
+    "174": "{",
+    "175": "\"",
+    "176": "m",
+    "177": "o",
+    "178": "d",
+    "179": "e",
+    "180": "\"",
+    "181": ":",
+    "182": "\"",
+    "183": "f",
+    "184": "i",
+    "185": "l",
+    "186": "e",
+    "187": "\"",
+    "188": ",",
+    "189": "\"",
+    "190": "f",
+    "191": "i",
+    "192": "l",
+    "193": "e",
+    "194": "S",
+    "195": "i",
+    "196": "z",
+    "197": "e",
+    "198": "\"",
+    "199": ":",
+    "200": "\"",
+    "201": "1",
+    "202": "0",
+    "203": "0",
+    "204": "m",
+    "205": "b",
+    "206": "\"",
+    "207": ",",
+    "208": "\"",
+    "209": "w",
+    "210": "h",
+    "211": "i",
+    "212": "t",
+    "213": "e",
+    "214": "l",
+    "215": "i",
+    "216": "s",
+    "217": "t",
+    "218": "\"",
+    "219": ":",
+    "220": "[",
+    "221": "\"",
+    "222": ".",
+    "223": "j",
+    "224": "p",
+    "225": "g",
+    "226": "\"",
+    "227": ",",
+    "228": "\"",
+    "229": ".",
+    "230": "j",
+    "231": "p",
+    "232": "e",
+    "233": "g",
+    "234": "\"",
+    "235": ",",
+    "236": "\"",
+    "237": ".",
+    "238": "p",
+    "239": "n",
+    "240": "g",
+    "241": "\"",
+    "242": ",",
+    "243": "\"",
+    "244": ".",
+    "245": "g",
+    "246": "i",
+    "247": "f",
+    "248": "\"",
+    "249": ",",
+    "250": "\"",
+    "251": ".",
+    "252": "b",
+    "253": "m",
+    "254": "p",
+    "255": "\"",
+    "256": ",",
+    "257": "\"",
+    "258": ".",
+    "259": "w",
+    "260": "b",
+    "261": "m",
+    "262": "p",
+    "263": "\"",
+    "264": ",",
+    "265": "\"",
+    "266": ".",
+    "267": "w",
+    "268": "e",
+    "269": "b",
+    "270": "p",
+    "271": "\"",
+    "272": ",",
+    "273": "\"",
+    "274": ".",
+    "275": "t",
+    "276": "i",
+    "277": "f",
+    "278": "\"",
+    "279": ",",
+    "280": "\"",
+    "281": ".",
+    "282": "p",
+    "283": "s",
+    "284": "d",
+    "285": "\"",
+    "286": ",",
+    "287": "\"",
+    "288": ".",
+    "289": "s",
+    "290": "v",
+    "291": "g",
+    "292": "\"",
+    "293": ",",
+    "294": "\"",
+    "295": ".",
+    "296": "j",
+    "297": "s",
+    "298": "\"",
+    "299": ",",
+    "300": "\"",
+    "301": ".",
+    "302": "j",
+    "303": "s",
+    "304": "x",
+    "305": "\"",
+    "306": ",",
+    "307": "\"",
+    "308": ".",
+    "309": "j",
+    "310": "s",
+    "311": "o",
+    "312": "n",
+    "313": "\"",
+    "314": ",",
+    "315": "\"",
+    "316": ".",
+    "317": "c",
+    "318": "s",
+    "319": "s",
+    "320": "\"",
+    "321": ",",
+    "322": "\"",
+    "323": ".",
+    "324": "l",
+    "325": "e",
+    "326": "s",
+    "327": "s",
+    "328": "\"",
+    "329": ",",
+    "330": "\"",
+    "331": ".",
+    "332": "h",
+    "333": "t",
+    "334": "m",
+    "335": "l",
+    "336": "\"",
+    "337": ",",
+    "338": "\"",
+    "339": ".",
+    "340": "h",
+    "341": "t",
+    "342": "m",
+    "343": "\"",
+    "344": ",",
+    "345": "\"",
+    "346": ".",
+    "347": "x",
+    "348": "m",
+    "349": "l",
+    "350": "\"",
+    "351": ",",
+    "352": "\"",
+    "353": ".",
+    "354": "z",
+    "355": "i",
+    "356": "p",
+    "357": "\"",
+    "358": ",",
+    "359": "\"",
+    "360": ".",
+    "361": "g",
+    "362": "z",
+    "363": "\"",
+    "364": ",",
+    "365": "\"",
+    "366": ".",
+    "367": "t",
+    "368": "g",
+    "369": "z",
+    "370": "\"",
+    "371": ",",
+    "372": "\"",
+    "373": ".",
+    "374": "g",
+    "375": "z",
+    "376": "i",
+    "377": "p",
+    "378": "\"",
+    "379": ",",
+    "380": "\"",
+    "381": ".",
+    "382": "m",
+    "383": "p",
+    "384": "3",
+    "385": "\"",
+    "386": ",",
+    "387": "\"",
+    "388": ".",
+    "389": "m",
+    "390": "p",
+    "391": "4",
+    "392": "\"",
+    "393": ",",
+    "394": "\"",
+    "395": ".",
+    "396": "a",
+    "397": "v",
+    "398": "i",
+    "399": "\"",
+    "400": ",",
+    "401": "\"",
+    "402": ".",
+    "403": "t",
+    "404": "a",
+    "405": "r",
+    "406": "\"",
+    "407": "]",
+    "408": "}",
+    "409": "}",
+    "session": {
+      "maxAge": 86400000,
+      "key": "EGG_SESS",
+      "httpOnly": true,
+      "encrypt": true,
+      "logValue": true,
+      "overwrite": true,
+      "signed": true,
+      "autoCommit": true,
+      "encode": "<Function encode>",
+      "decode": "<Function decode>",
+      "genid": "<Function v4>"
+    },
+    "security": {
+      "domainWhiteList": [],
+      "protocolWhiteList": [],
+      "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
+      "csrf": {
+        "enable": false,
+        "type": "ctoken",
+        "ignoreJSON": false,
+        "useSession": false,
+        "cookieName": "csrfToken",
+        "sessionName": "csrfToken",
+        "headerName": "x-csrf-token",
+        "bodyName": "_csrf",
+        "queryName": "_csrf",
+        "rotateWhenInvalid": false,
+        "supportedRequests": [
+          {
+            "path": {},
+            "methods": [
+              "POST",
+              "PATCH",
+              "DELETE",
+              "PUT",
+              "CONNECT"
+            ]
+          }
+        ],
+        "refererWhiteList": [],
+        "cookieOptions": {
+          "signed": false
+        }
+      },
+      "xframe": {
+        "enable": true,
+        "value": "SAMEORIGIN",
+        "matching": "<Function anonymous>"
+      },
+      "hsts": {
+        "enable": false,
+        "maxAge": 31536000,
+        "includeSubdomains": false
+      },
+      "dta": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "methodnoallow": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "noopen": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "nosniff": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "referrerPolicy": {
+        "enable": false,
+        "value": "no-referrer-when-downgrade"
+      },
+      "xssProtection": {
+        "enable": true,
+        "value": "1; mode=block",
+        "matching": "<Function anonymous>"
+      },
+      "csp": {
+        "enable": false,
+        "policy": {}
+      },
+      "ssrf": {
+        "ipBlackList": null,
+        "ipExceptionList": null,
+        "hostnameExceptionList": null,
+        "checkAddress": null
+      },
+      "_protocolWhiteListSet": "<Set>"
+    },
+    "helper": {
+      "shtml": {}
+    },
+    "jsonp": {
+      "limit": 50,
+      "callback": [
+        "_callback",
+        "callback"
+      ],
+      "csrf": false
+    },
+    "onerror": {
+      "errorPageUrl": "",
+      "appErrorFilter": null,
+      "templatePath": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-onerror/lib/onerror_page.mustache"
+    },
+    "i18n": {
+      "defaultLocale": "en_US",
+      "dirs": [
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-session/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-security/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-jsonp/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-onerror/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-i18n/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-watcher/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-schedule/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-multipart/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-development/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-logrotator/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-static/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-view/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-cors/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-swagger-docs/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-view-nunjucks/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-sequelize/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-graphql/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-downloader/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-remote-config/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/locales",
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/config/locales"
+      ],
+      "queryField": "locale",
+      "cookieField": "locale",
+      "cookieDomain": "",
+      "cookieMaxAge": "1y",
+      "functionName": "__"
+    },
+    "watcher": {
+      "type": "development",
+      "eventSources": {
+        "default": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-watcher/lib/event-sources/development"
+      }
+    },
+    "customLogger": {
+      "scheduleLogger": {
+        "consoleLevel": "NONE",
+        "file": "egg-schedule.log"
+      }
+    },
+    "schedule": {
+      "directory": []
+    },
+    "multipart": {
+      "mode": "file",
+      "autoFields": false,
+      "defaultCharset": "utf8",
+      "defaultParamCharset": "utf8",
+      "fieldNameSize": 100,
+      "fieldSize": 102400,
+      "fields": 10,
+      "fileSize": 10485760,
+      "files": 10,
+      "fileExtensions": [],
+      "whitelist": null,
+      "allowArrayField": false,
+      "tmpdir": "/var/folders/01/dhxtw0015cn9054tw242s7gh0000gn/T/egg-multipart-tmp/cmswing",
+      "cleanSchedule": {
+        "cron": "0 30 4 * * *",
+        "disable": false
+      },
+      "checkFile": "<Function anonymous>"
+    },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false,
+      "overrideIgnore": false
+    },
+    "logrotator": {
+      "filesRotateByHour": null,
+      "hourDelimiter": "-",
+      "filesRotateBySize": null,
+      "maxFileSize": 52428800,
+      "maxFiles": 10,
+      "rotateDuration": 60000,
+      "maxDays": 31
+    },
+    "static": {
+      "prefix": "/public/",
+      "dir": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/app/public",
+      "dynamic": true,
+      "preload": false,
+      "buffer": false,
+      "maxFiles": 1000
+    },
+    "view": {
+      "root": [
+        "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/app/view"
+      ],
+      "cache": false,
+      "defaultExtension": ".html",
+      "defaultViewEngine": "nunjucks",
+      "mapping": {
+        ".html": "nunjucks"
+      }
+    },
+    "cors": {
+      "hasCustomOriginHandler": false,
+      "origin": "<Function corsOrigin>"
+    },
+    "swaggerdoc": {
+      "dirScanner": "./app/controller",
+      "basePath": "/",
+      "apiInfo": {
+        "title": "cmswing",
+        "description": "cmswing",
+        "version": "1.0.0"
+      },
+      "schemes": [
+        "http",
+        "https"
+      ],
+      "consumes": [
+        "application/json"
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "securityDefinitions": {},
+      "enableSecurity": false,
+      "routerMap": false,
+      "enable": true
+    },
+    "nunjucks": {
+      "autoescape": true,
+      "throwOnUndefined": false,
+      "trimBlocks": false,
+      "lstripBlocks": false,
+      "cache": false
+    },
+    "sequelize": {
+      "dialect": "mysql",
+      "database": "",
+      "host": "localhost",
+      "port": 3306,
+      "username": "root",
+      "password": "<String len: 0>",
+      "datasources": [
+        {
+          "dialect": "mysql",
+          "host": "127.0.0.1",
+          "port": 3306,
+          "database": "cmswing2",
+          "username": "root",
+          "password": "123456",
+          "timezone": "+08:00",
+          "define": {
+            "freezeTableName": true,
+            "underscored": false
+          },
+          "operatorsAliases": {}
+        }
+      ]
+    },
+    "graphql": {
+      "router": "/graphql-dev",
+      "app": true,
+      "agent": false,
+      "graphiql": true,
+      "defaultEmptySchema": false,
+      "onPreGraphQL": "<AsyncFunction onPreGraphQL>",
+      "onPreGraphiQL": "<AsyncFunction onPreGraphiQL>"
+    },
+    "downloader": {
+      "content_type": "application/octet-stream"
+    },
+    "remoteConfig": {
+      "savePath": "remote_config.json",
+      "handler": "<AsyncFunction handler>"
+    },
+    "env": "local",
+    "name": "cmswing",
+    "keys": "<String len: 26>",
+    "cookies": {},
+    "proxy": false,
+    "maxIpsCount": 0,
+    "maxProxyCount": 0,
+    "protocolHeaders": "x-forwarded-proto",
+    "ipHeaders": "x-forwarded-for",
+    "hostHeaders": "",
+    "pkg": {
+      "name": "cmswing",
+      "version": "2.0.1",
+      "description": "企业级Node WEB开发框架，使用 Egg.js 和 GraphQ 构建更好的 NodeJS 应用程序，帮助开发人员降低开发和维护成本。",
+      "private": true,
+      "egg": {
+        "declarations": true
+      },
+      "dependencies": {
+        "@alicloud/openapi-client": "^0.4.5",
+        "ali-oss": "^6.17.1",
+        "compressing": "^1.7.0",
+        "cos-nodejs-sdk-v5": "^2.11.19",
+        "dataloader": "^2.2.1",
+        "egg": "^3",
+        "egg-cors": "^2.2.3",
+        "egg-downloader": "^1.0.5",
+        "egg-graphql": "^2.8.0",
+        "egg-remote-config": "^1.0.1",
+        "egg-scripts": "^2",
+        "egg-sequelize": "^6.0.0",
+        "egg-swagger-docs": "^2.3.5",
+        "egg-view-nunjucks": "^2.3.0",
+        "esdk-obs-nodejs": "^3.21.6",
+        "fs-extra": "^10.1.0",
+        "graphql": "^16.6.0",
+        "jsonwebtoken": "^8.5.1",
+        "mysql2": "^2.3.3",
+        "qiniu": "^7.7.0",
+        "utility": "^1.17.0"
+      },
+      "devDependencies": {
+        "egg-bin": "^5",
+        "egg-ci": "^2",
+        "egg-mock": "^5"
+      },
+      "engines": {
+        "node": ">=16.0.0"
+      },
+      "scripts": {
+        "start": "egg-scripts start --daemon --title=egg-server-CmsWing",
+        "stop": "egg-scripts stop --title=egg-server-CmsWing",
+        "dev": "egg-bin dev",
+        "debug": "egg-bin debug",
+        "test": "npm run lint -- --fix && npm run test-local",
+        "test-local": "egg-bin test",
+        "cov": "egg-bin cov",
+        "lint": "eslint .",
+        "ci": "npm run lint && npm run cov",
+        "autod": "autod"
+      },
+      "ci": {
+        "version": "16",
+        "type": "github"
+      },
+      "repository": {
+        "type": "git",
+        "url": ""
+      },
+      "author": "arterli",
+      "license": "MIT"
+    },
+    "baseDir": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms",
+    "HOME": "/Users/hanshuqiang",
+    "rundir": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/run",
+    "dump": {
+      "ignore": "<Set>",
+      "timing": {
+        "slowBootActionMinDuration": 5000
+      }
+    },
+    "confusedConfigurations": {
+      "bodyparser": "bodyParser",
+      "notFound": "notfound",
+      "sitefile": "siteFile",
+      "middlewares": "middleware",
+      "httpClient": "httpclient"
+    },
+    "notfound": {
+      "pageUrl": ""
+    },
+    "siteFile": {
+      "/favicon.ico": "<Buffer len: 6463>",
+      "cacheControl": "public, max-age=2592000"
+    },
+    "bodyParser": {
+      "enable": true,
+      "encoding": "utf8",
+      "formLimit": "1mb",
+      "jsonLimit": "1mb",
+      "textLimit": "1mb",
+      "strict": true,
+      "queryString": {
+        "arrayLimit": 100,
+        "depth": 5,
+        "parameterLimit": 1000
+      },
+      "returnRawBody": true
+    },
+    "logger": {
+      "dir": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/logs/cmswing",
+      "encoding": "utf8",
+      "env": "local",
+      "level": "INFO",
+      "consoleLevel": "INFO",
+      "disableConsoleAfterReady": false,
+      "outputJSON": false,
+      "buffer": true,
+      "appLogName": "cmswing-web.log",
+      "coreLogName": "egg-web.log",
+      "agentLogName": "egg-agent.log",
+      "errorLogName": "common-error.log",
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
+      "allowDebugAtProd": false,
+      "enablePerformanceTimer": false,
+      "enableFastContextLogger": false,
+      "type": "application",
+      "localStorage": "<AsyncLocalStorage>"
+    },
+    "httpclient": {
+      "enableDNSCache": false,
+      "dnsCacheLookupInterval": 10000,
+      "dnsCacheMaxLength": 1000,
+      "request": {
+        "timeout": 5000
+      },
+      "httpAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      },
+      "httpsAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      },
+      "useHttpClientNext": false
+    },
+    "meta": {
+      "enable": true,
+      "logging": false
+    },
+    "coreMiddleware": [
+      "cors",
+      "meta",
+      "siteFile",
+      "notfound",
+      "static",
+      "bodyParser",
+      "overrideMethod",
+      "multipart",
+      "session",
+      "securities",
+      "i18n",
+      "eggLoaderTrace"
+    ],
+    "workerStartTimeout": 600000,
+    "serverTimeout": null,
+    "cluster": {
+      "listen": {
+        "path": "",
+        "port": 7001,
+        "hostname": ""
+      }
+    },
+    "clusterClient": {
+      "maxWaitTime": 60000,
+      "responseTimeout": 60000
+    },
+    "onClientError": null,
+    "middleware": [
+      "graphql"
+    ],
+    "coreMiddlewares": "~config~coreMiddleware",
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware",
+    "objectStorage": "{\"cos\":{\"path\":\"upload\"},\"obs\":{\"path\":\"upload\",\"Bucket\":\"\"},\"oss\":{\"path\":\"upload\",\"Bucket\":\"cmswing\",\"Region\":\"oss-cn-shanghai\",\"domain\":\"\",\"AccessKey\":\"\",\"SecretKey\":\"\"},\"kodo\":{\"path\":\"upload\"},\"type\":\"local\",\"local\":{\"path\":\"upload\",\"domain\":\"http://127.0.0.1:7001\"}}",
+    "cms": "{\"icp\":\"陕ICP备19013609号-6\",\"name\":\"CmsWing\",\"tongji\":\"<script>\\n    var _hmt = _hmt || [];\\n    (function() {\\n  var hm = document.createElement(\\\"script\\\");\\n    hm.src = \\\"https://hm.baidu.com/hm.js?c479407a5725732813bcd8384c174467\\\";\\n    var s = document.getElementsByTagName(\\\"script\\\")[0];\\n    s.parentNode.insertBefore(hm, s);\\n})();\\n</script>\",\"keywords\":\"nodejs,cms,eggjs\",\"description\":\"企业级 Node.js WEB开发框架,使用 Egg.js 和 GraphQ 构建更好的 NodeJS 应用程序，帮助开发人员降低开发和维护成本！\"}"
+  },
+  "plugins": {
+    "onerror": {
+      "enable": true,
+      "package": "egg-onerror",
+      "name": "onerror",
+      "dependencies": [],
+      "optionalDependencies": [
+        "jsonp"
+      ],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-onerror",
+      "version": "2.2.0"
+    },
+    "session": {
+      "enable": true,
+      "package": "egg-session",
+      "name": "session",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-session",
+      "version": "3.3.0"
+    },
+    "i18n": {
+      "enable": true,
+      "package": "egg-i18n",
+      "name": "i18n",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-i18n",
+      "version": "2.1.1"
+    },
+    "watcher": {
+      "enable": true,
+      "package": "egg-watcher",
+      "name": "watcher",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-watcher",
+      "version": "3.1.1",
+      "dependents": [
+        "development"
+      ]
+    },
+    "multipart": {
+      "enable": true,
+      "package": "egg-multipart",
+      "name": "multipart",
+      "dependencies": [],
+      "optionalDependencies": [
+        "schedule"
+      ],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-multipart",
+      "version": "3.4.0"
+    },
+    "security": {
+      "enable": true,
+      "package": "egg-security",
+      "name": "security",
+      "dependencies": [],
+      "optionalDependencies": [
+        "session"
+      ],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-security",
+      "version": "3.6.0",
+      "dependents": [
+        "nunjucks"
+      ]
+    },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-development",
+      "version": "3.0.0"
+    },
+    "logrotator": {
+      "enable": true,
+      "package": "egg-logrotator",
+      "name": "logrotator",
+      "dependencies": [
+        "schedule"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-logrotator",
+      "version": "3.2.0"
+    },
+    "schedule": {
+      "enable": true,
+      "package": "egg-schedule",
+      "name": "schedule",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-schedule",
+      "version": "4.0.1",
+      "dependents": [
+        "logrotator"
+      ]
+    },
+    "static": {
+      "enable": true,
+      "package": "egg-static",
+      "name": "static",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-static",
+      "version": "2.3.1"
+    },
+    "jsonp": {
+      "enable": true,
+      "package": "egg-jsonp",
+      "name": "jsonp",
+      "dependencies": [],
+      "optionalDependencies": [
+        "security"
+      ],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-jsonp",
+      "version": "2.0.0"
+    },
+    "view": {
+      "enable": true,
+      "package": "egg-view",
+      "name": "view",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-view",
+      "version": "2.1.4",
+      "dependents": [
+        "nunjucks"
+      ]
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-cors",
+      "version": "2.2.4"
+    },
+    "swaggerdoc": {
+      "enable": true,
+      "package": "egg-swagger-docs",
+      "name": "swaggerdoc",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-swagger-docs",
+      "version": "2.3.5"
+    },
+    "nunjucks": {
+      "enable": true,
+      "package": "egg-view-nunjucks",
+      "name": "nunjucks",
+      "dependencies": [
+        "security",
+        "view"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-view-nunjucks",
+      "version": "2.3.0"
+    },
+    "sequelize": {
+      "enable": true,
+      "package": "egg-sequelize",
+      "name": "sequelize",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-sequelize",
+      "version": "6.0.0"
+    },
+    "graphql": {
+      "enable": true,
+      "package": "egg-graphql",
+      "name": "graphql",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-graphql",
+      "version": "2.8.0"
+    },
+    "downloader": {
+      "enable": true,
+      "package": "egg-downloader",
+      "name": "downloader",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-downloader",
+      "version": "1.0.5"
+    },
+    "remoteConfig": {
+      "enable": true,
+      "package": "egg-remote-config",
+      "name": "remoteConfig",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/config/plugin.js",
+      "path": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-remote-config",
+      "version": "1.0.1"
+    }
+  },
+  "appInfo": {
+    "name": "cmswing",
+    "baseDir": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms",
+    "env": "local",
+    "scope": "",
+    "HOME": "/Users/hanshuqiang",
+    "pkg": {
+      "name": "cmswing",
+      "version": "2.0.1",
+      "description": "企业级Node WEB开发框架，使用 Egg.js 和 GraphQ 构建更好的 NodeJS 应用程序，帮助开发人员降低开发和维护成本。",
+      "private": true,
+      "egg": {
+        "declarations": true
+      },
+      "dependencies": {
+        "@alicloud/openapi-client": "^0.4.5",
+        "ali-oss": "^6.17.1",
+        "compressing": "^1.7.0",
+        "cos-nodejs-sdk-v5": "^2.11.19",
+        "dataloader": "^2.2.1",
+        "egg": "^3",
+        "egg-cors": "^2.2.3",
+        "egg-downloader": "^1.0.5",
+        "egg-graphql": "^2.8.0",
+        "egg-remote-config": "^1.0.1",
+        "egg-scripts": "^2",
+        "egg-sequelize": "^6.0.0",
+        "egg-swagger-docs": "^2.3.5",
+        "egg-view-nunjucks": "^2.3.0",
+        "esdk-obs-nodejs": "^3.21.6",
+        "fs-extra": "^10.1.0",
+        "graphql": "^16.6.0",
+        "jsonwebtoken": "^8.5.1",
+        "mysql2": "^2.3.3",
+        "qiniu": "^7.7.0",
+        "utility": "^1.17.0"
+      },
+      "devDependencies": {
+        "egg-bin": "^5",
+        "egg-ci": "^2",
+        "egg-mock": "^5"
+      },
+      "engines": {
+        "node": ">=16.0.0"
+      },
+      "scripts": {
+        "start": "egg-scripts start --daemon --title=egg-server-CmsWing",
+        "stop": "egg-scripts stop --title=egg-server-CmsWing",
+        "dev": "egg-bin dev",
+        "debug": "egg-bin debug",
+        "test": "npm run lint -- --fix && npm run test-local",
+        "test-local": "egg-bin test",
+        "cov": "egg-bin cov",
+        "lint": "eslint .",
+        "ci": "npm run lint && npm run cov",
+        "autod": "autod"
+      },
+      "ci": {
+        "version": "16",
+        "type": "github"
+      },
+      "repository": {
+        "type": "git",
+        "url": ""
+      },
+      "author": "arterli",
+      "license": "MIT"
+    },
+    "root": "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms"
+  }
+}

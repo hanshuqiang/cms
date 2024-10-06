@@ -1,0 +1,428 @@
+2024-10-07 04:31:42,881 INFO 18368 [egg-sequelize] Not overriding built-in method from model attribute: where
+2024-10-07 04:31:42,890 INFO 18368 [egg-sequelize] Not overriding built-in method from model attribute: where
+2024-10-07 04:31:42,890 INFO 18368 [egg-sequelize] Not overriding built-in method from model attribute: where
+2024-10-07 04:31:43,054 INFO 18368 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2024-10-07 04:31:43,055 INFO 18368 [RemoteConfig] loading remote config and save to /Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/run/remote_config.json
+2024-10-07 04:31:43,056 INFO 18368 [egg-sequelize](4ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'cms_classify' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,059 INFO 18368 [egg-sequelize](3ms) Executed (default): SELECT `id`, `createdAt`, `updatedAt`, `name`, `label`, `value` FROM `sys_config` AS `sys_config`;
+2024-10-07 04:31:43,068 INFO 18368 [egg-sequelize](11ms) Executed (default): SHOW FULL COLUMNS FROM `cms_classify`;
+2024-10-07 04:31:43,069 INFO 18368 [egg-sequelize](9ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'cms_classify' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,092 INFO 18368 [egg-sequelize](22ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,101 INFO 18368 [egg-sequelize](8ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,106 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `name` `name` VARCHAR(255) COMMENT '标识';
+2024-10-07 04:31:43,113 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `title` `title` VARCHAR(255) COMMENT '标题';
+2024-10-07 04:31:43,121 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `pid` `pid` INTEGER DEFAULT 0 COMMENT '上级分类ID';
+2024-10-07 04:31:43,127 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `sort` `sort` INTEGER DEFAULT 0 COMMENT '排序（同级有效）';
+2024-10-07 04:31:43,133 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `list_row` `list_row` INTEGER DEFAULT 15 COMMENT '列表每页行数';
+2024-10-07 04:31:43,140 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `meta_title` `meta_title` VARCHAR(255) COMMENT 'SEO的网页标题';
+2024-10-07 04:31:43,149 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `keywords` `keywords` VARCHAR(255) COMMENT '关键字';
+2024-10-07 04:31:43,155 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `description` `description` VARCHAR(255) COMMENT '描述';
+2024-10-07 04:31:43,164 INFO 18368 [egg-sequelize](8ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `template_index` `template_index` VARCHAR(255) COMMENT '频道页模板';
+2024-10-07 04:31:43,171 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `template_lists` `template_lists` VARCHAR(255) COMMENT '列表页模板';
+2024-10-07 04:31:43,178 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `template_detail` `template_detail` VARCHAR(255) COMMENT '详情页模板';
+2024-10-07 04:31:43,186 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `models_uuid` `models_uuid` VARCHAR(255) COMMENT '关联模型UUID';
+2024-10-07 04:31:43,194 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `type` `type` VARCHAR(255) COMMENT '允许发布的内容类型';
+2024-10-07 04:31:43,200 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `allow_publish` `allow_publish` TINYINT(1) DEFAULT false COMMENT '是否允许发布内容';
+2024-10-07 04:31:43,205 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `display` `display` INTEGER COMMENT '可见性';
+2024-10-07 04:31:43,212 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `reply` `reply` TINYINT(1) DEFAULT true COMMENT '是否允许回复';
+2024-10-07 04:31:43,219 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `check` `check` TINYINT(1) DEFAULT true COMMENT '发布的文章是否需要审核';
+2024-10-07 04:31:43,225 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `sub` `sub` TEXT COMMENT '子分类';
+2024-10-07 04:31:43,232 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `status` `status` TINYINT(1) DEFAULT true COMMENT '状态';
+2024-10-07 04:31:43,238 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_classify` CHANGE `icon` `icon` VARCHAR(255) COMMENT '分类图片';
+2024-10-07 04:31:43,243 INFO 18368 [egg-sequelize](4ms) Executed (default): SHOW INDEX FROM `cms_classify` FROM `cmswing2`
+2024-10-07 04:31:43,246 INFO 18368 [egg-sequelize](2ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'cms_comments' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,250 INFO 18368 [egg-sequelize](3ms) Executed (default): SHOW FULL COLUMNS FROM `cms_comments`;
+2024-10-07 04:31:43,251 INFO 18368 [egg-sequelize](4ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'cms_comments' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,261 INFO 18368 [egg-sequelize](10ms) Executed (default): ALTER TABLE `cms_comments` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,268 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_comments` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,275 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_comments` CHANGE `content` `content` TEXT COMMENT '内容';
+2024-10-07 04:31:43,282 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_comments` CHANGE `member_uuid` `member_uuid` CHAR(36) BINARY COMMENT '用户关联uuid';
+2024-10-07 04:31:43,286 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_comments` CHANGE `doc_id` `doc_id` INTEGER COMMENT '文档关联id';
+2024-10-07 04:31:43,288 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `cms_comments` FROM `cmswing2`
+2024-10-07 04:31:43,289 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'cms_comments_reply' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,290 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'cms_comments_reply' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,291 INFO 18368 [egg-sequelize](2ms) Executed (default): SHOW FULL COLUMNS FROM `cms_comments_reply`;
+2024-10-07 04:31:43,297 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_comments_reply` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,303 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_comments_reply` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,308 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_comments_reply` CHANGE `content` `content` TEXT COMMENT '回复内容';
+2024-10-07 04:31:43,314 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_comments_reply` CHANGE `comments_id` `comments_id` INTEGER COMMENT '评论关联id';
+2024-10-07 04:31:43,320 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_comments_reply` CHANGE `member_uuid` `member_uuid` CHAR(36) BINARY COMMENT '用户关联uuid';
+2024-10-07 04:31:43,321 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `cms_comments_reply` FROM `cmswing2`
+2024-10-07 04:31:43,322 INFO 18368 [egg-sequelize](0ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'cms_doc' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,324 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `cms_doc`;
+2024-10-07 04:31:43,324 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'cms_doc' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,329 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,333 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,336 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `user_uuid` `user_uuid` CHAR(36) BINARY COMMENT '作者uuid';
+2024-10-07 04:31:43,339 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `title` `title` VARCHAR(255) COMMENT '内容标题';
+2024-10-07 04:31:43,343 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `classify_id` `classify_id` INTEGER DEFAULT 0 COMMENT '分类ID';
+2024-10-07 04:31:43,349 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `classify_sub` `classify_sub` JSON COMMENT '子分类';
+2024-10-07 04:31:43,353 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `description` `description` VARCHAR(1000) COMMENT '描述';
+2024-10-07 04:31:43,358 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `root` `root` INTEGER DEFAULT 0 COMMENT '根节点';
+2024-10-07 04:31:43,364 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `pid` `pid` INTEGER DEFAULT 0 COMMENT '所属ID';
+2024-10-07 04:31:43,368 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `models_uuid` `models_uuid` CHAR(36) BINARY COMMENT '模型UUID';
+2024-10-07 04:31:43,372 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `type` `type` INTEGER DEFAULT 2 COMMENT '内容类型（1-目录，2-主题，3-段落）';
+2024-10-07 04:31:43,377 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `position` `position` VARCHAR(255) COMMENT '推荐位(1-列表推荐，2-频道页推荐，4-首页推荐）';
+2024-10-07 04:31:43,382 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `ext_link` `ext_link` VARCHAR(255) COMMENT '如果填写链接,会跳转到这个链接,不填不跳转';
+2024-10-07 04:31:43,385 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `cover_url` `cover_url` VARCHAR(255) COMMENT '封面';
+2024-10-07 04:31:43,388 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `display` `display` TINYINT(1) DEFAULT true COMMENT '可见性';
+2024-10-07 04:31:43,392 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `deadline` `deadline` DATETIME COMMENT '截止时间';
+2024-10-07 04:31:43,397 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `view` `view` INTEGER DEFAULT 0 COMMENT '浏览量';
+2024-10-07 04:31:43,403 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `level` `level` INTEGER DEFAULT 0 COMMENT '优先级（越高排序越靠前）';
+2024-10-07 04:31:43,410 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `status` `status` INTEGER DEFAULT 1 COMMENT '数据状态（0-禁用，1-正常，2-待审核，3-草稿）';
+2024-10-07 04:31:43,417 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `template` `template` VARCHAR(255) COMMENT '模板详情';
+2024-10-07 04:31:43,425 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `tags` `tags` VARCHAR(255) COMMENT '标签';
+2024-10-07 04:31:43,433 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `sort` `sort` INTEGER DEFAULT 0 COMMENT '排序同级有效越小越靠前';
+2024-10-07 04:31:43,441 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `cms_doc` CHANGE `deletedAt` `deletedAt` DATETIME;
+2024-10-07 04:31:43,444 INFO 18368 [egg-sequelize](3ms) Executed (default): SHOW INDEX FROM `cms_doc` FROM `cmswing2`
+2024-10-07 04:31:43,446 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'cms_doc_article' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,448 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'cms_doc_article' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,448 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `cms_doc_article`;
+2024-10-07 04:31:43,454 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_doc_article` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,459 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_doc_article` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,464 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_doc_article` CHANGE `doc_id` `doc_id` INTEGER COMMENT '主表id';
+2024-10-07 04:31:43,469 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc_article` CHANGE `content` `content` TEXT COMMENT '文章内容';
+2024-10-07 04:31:43,473 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc_article` CHANGE `deletedAt` `deletedAt` DATETIME;
+2024-10-07 04:31:43,476 INFO 18368 [egg-sequelize](2ms) Executed (default): SHOW INDEX FROM `cms_doc_article` FROM `cmswing2`
+2024-10-07 04:31:43,478 INFO 18368 [egg-sequelize](2ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'cms_doc_download' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,480 INFO 18368 [egg-sequelize](2ms) Executed (default): SHOW FULL COLUMNS FROM `cms_doc_download`;
+2024-10-07 04:31:43,481 INFO 18368 [egg-sequelize](3ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'cms_doc_download' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,487 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc_download` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,492 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_doc_download` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,500 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `cms_doc_download` CHANGE `doc_id` `doc_id` INTEGER COMMENT '主表id';
+2024-10-07 04:31:43,506 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `cms_doc_download` CHANGE `content` `content` JSON COMMENT '下载内容';
+2024-10-07 04:31:43,510 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc_download` CHANGE `desc` `desc` TEXT COMMENT '下载介绍';
+2024-10-07 04:31:43,515 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc_download` CHANGE `deletedAt` `deletedAt` DATETIME;
+2024-10-07 04:31:43,516 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `cms_doc_download` FROM `cmswing2`
+2024-10-07 04:31:43,517 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'cms_doc_picture' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,518 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `cms_doc_picture`;
+2024-10-07 04:31:43,518 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'cms_doc_picture' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,521 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_doc_picture` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,524 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_doc_picture` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,527 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_doc_picture` CHANGE `doc_id` `doc_id` INTEGER COMMENT '主表id';
+2024-10-07 04:31:43,532 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_doc_picture` CHANGE `content` `content` JSON COMMENT '图片内容';
+2024-10-07 04:31:43,535 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_doc_picture` CHANGE `deletedAt` `deletedAt` DATETIME;
+2024-10-07 04:31:43,536 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `cms_doc_picture` FROM `cmswing2`
+2024-10-07 04:31:43,537 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'cms_template' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,538 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'cms_template' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,538 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `cms_template`;
+2024-10-07 04:31:43,540 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `cms_template` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,545 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_template` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,549 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_template` CHANGE `name` `name` VARCHAR(255) COMMENT '模板名称';
+2024-10-07 04:31:43,552 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_template` CHANGE `path` `path` VARCHAR(255) COMMENT '模板目录';
+2024-10-07 04:31:43,555 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_template` CHANGE `author` `author` VARCHAR(255) COMMENT '作者';
+2024-10-07 04:31:43,559 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_template` CHANGE `sys` `sys` TINYINT(1) DEFAULT false COMMENT '系统模板';
+2024-10-07 04:31:43,563 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_template` CHANGE `isu` `isu` TINYINT(1) DEFAULT false COMMENT '正在使用';
+2024-10-07 04:31:43,566 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_template` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'uuid';
+2024-10-07 04:31:43,569 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `cms_template` CHANGE `version` `version` VARCHAR(255) COMMENT '版本号';
+2024-10-07 04:31:43,570 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `cms_template` FROM `cmswing2`
+2024-10-07 04:31:43,570 INFO 18368 [egg-sequelize](0ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'cms_template_list' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,571 INFO 18368 [egg-sequelize](0ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'cms_template_list' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,572 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `cms_template_list`;
+2024-10-07 04:31:43,576 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_template_list` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,581 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `cms_template_list` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,584 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_template_list` CHANGE `template_uuid` `template_uuid` CHAR(36) BINARY COMMENT '模板UUID';
+2024-10-07 04:31:43,587 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_template_list` CHANGE `title` `title` VARCHAR(255) COMMENT '模板名称';
+2024-10-07 04:31:43,590 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_template_list` CHANGE `type` `type` VARCHAR(255) DEFAULT 'index' COMMENT '类型';
+2024-10-07 04:31:43,595 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `cms_template_list` CHANGE `name` `name` VARCHAR(255) COMMENT '文件名称';
+2024-10-07 04:31:43,598 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_template_list` CHANGE `html` `html` TEXT COMMENT '文件内容';
+2024-10-07 04:31:43,601 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_template_list` CHANGE `isd` `isd` TINYINT(1) DEFAULT false COMMENT '是否默认';
+2024-10-07 04:31:43,604 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_template_list` CHANGE `isu` `isu` TINYINT(1) DEFAULT false COMMENT '使用中';
+2024-10-07 04:31:43,607 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `cms_template_list` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'UUID';
+2024-10-07 04:31:43,608 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `cms_template_list` FROM `cmswing2`
+2024-10-07 04:31:43,609 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'mc_member' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,610 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `mc_member`;
+2024-10-07 04:31:43,611 INFO 18368 [egg-sequelize](2ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'mc_member' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,616 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `mc_member` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,621 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `mc_member` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,625 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `mc_member` CHANGE `username` `username` VARCHAR(255) COMMENT '用户名';
+2024-10-07 04:31:43,630 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `mc_member` CHANGE `password` `password` VARCHAR(255) COMMENT '密码';
+2024-10-07 04:31:43,633 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `mc_member` CHANGE `email` `email` VARCHAR(255) COMMENT '邮箱';
+2024-10-07 04:31:43,638 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `mc_member` CHANGE `mobile` `mobile` VARCHAR(255) COMMENT '手机';
+2024-10-07 04:31:43,646 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `mc_member` CHANGE `state` `state` TINYINT(1) DEFAULT true COMMENT '状态';
+2024-10-07 04:31:43,651 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `mc_member` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'UUid';
+2024-10-07 04:31:43,655 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `mc_member` CHANGE `third` `third` JSON COMMENT '第三方扩展';
+2024-10-07 04:31:43,658 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `mc_member` CHANGE `avatar` `avatar` VARCHAR(255) COMMENT '头像';
+2024-10-07 04:31:43,661 INFO 18368 [egg-sequelize](2ms) Executed (default): SHOW INDEX FROM `mc_member` FROM `cmswing2`
+2024-10-07 04:31:43,663 INFO 18368 [egg-sequelize](2ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_application' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,665 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `sys_application`;
+2024-10-07 04:31:43,665 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_application' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,671 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_application` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,677 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `sys_application` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,684 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_application` CHANGE `name` `name` VARCHAR(255) COMMENT '应用标识';
+2024-10-07 04:31:43,689 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_application` CHANGE `title` `title` VARCHAR(255) COMMENT '应用名称';
+2024-10-07 04:31:43,693 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_application` CHANGE `intro` `intro` VARCHAR(255) COMMENT 'intro';
+2024-10-07 04:31:43,697 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_application` CHANGE `explain` `explain` TEXT COMMENT '说明';
+2024-10-07 04:31:43,701 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_application` CHANGE `author` `author` VARCHAR(255) COMMENT '作者';
+2024-10-07 04:31:43,703 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_application` CHANGE `version` `version` VARCHAR(255) COMMENT '版本';
+2024-10-07 04:31:43,707 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_application` CHANGE `sys` `sys` TINYINT(1) DEFAULT false COMMENT '是否系统';
+2024-10-07 04:31:43,709 INFO 18368 [egg-sequelize](2ms) Executed (default): SHOW INDEX FROM `sys_application` FROM `cmswing2`
+2024-10-07 04:31:43,710 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_config' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,711 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `sys_config`;
+2024-10-07 04:31:43,712 INFO 18368 [egg-sequelize](2ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_config' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,716 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_config` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,719 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_config` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,722 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_config` CHANGE `name` `name` VARCHAR(255) COMMENT '配置key';
+2024-10-07 04:31:43,727 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_config` CHANGE `label` `label` VARCHAR(255) COMMENT '配置名称';
+2024-10-07 04:31:43,733 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `sys_config` CHANGE `value` `value` JSON COMMENT '配置value';
+2024-10-07 04:31:43,735 INFO 18368 [egg-sequelize](2ms) Executed (default): SHOW INDEX FROM `sys_config` FROM `cmswing2`
+2024-10-07 04:31:43,736 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_models' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,737 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `sys_models`;
+2024-10-07 04:31:43,737 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_models' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,740 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_models` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,744 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,749 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_models` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'uuid';
+2024-10-07 04:31:43,753 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models` CHANGE `name` `name` VARCHAR(50) COMMENT '模型名称';
+2024-10-07 04:31:43,756 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models` CHANGE `desc` `desc` VARCHAR(255) COMMENT '模型说明';
+2024-10-07 04:31:43,760 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models` CHANGE `oldName` `oldName` VARCHAR(50) COMMENT '改变后的模型名称';
+2024-10-07 04:31:43,765 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models` CHANGE `paranoid` `paranoid` TINYINT(1) DEFAULT false COMMENT '偏执表';
+2024-10-07 04:31:43,768 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models` CHANGE `app` `app` VARCHAR(255) COMMENT '所属应用';
+2024-10-07 04:31:43,769 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `sys_models` FROM `cmswing2`
+2024-10-07 04:31:43,770 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_models_associate' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,772 INFO 18368 [egg-sequelize](2ms) Executed (default): SHOW FULL COLUMNS FROM `sys_models_associate`;
+2024-10-07 04:31:43,772 INFO 18368 [egg-sequelize](2ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_models_associate' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,777 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,783 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,786 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `type` `type` ENUM('HasOne', 'BelongsTo', 'HasMany', 'BelongsToMany') COMMENT '关联类型';
+2024-10-07 04:31:43,789 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'uuid';
+2024-10-07 04:31:43,794 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `models_uuid` `models_uuid` CHAR(36) BINARY COMMENT 'models_uuid';
+2024-10-07 04:31:43,799 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `parent_uuid` `parent_uuid` CHAR(36) BINARY COMMENT '父表';
+2024-10-07 04:31:43,802 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `targetKey` `targetKey` CHAR(36) BINARY COMMENT '父键';
+2024-10-07 04:31:43,805 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `through_uuid` `through_uuid` CHAR(36) BINARY COMMENT '中间表';
+2024-10-07 04:31:43,808 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `throughKey` `throughKey` CHAR(36) BINARY COMMENT '中间键';
+2024-10-07 04:31:43,812 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `child_uuid` `child_uuid` CHAR(36) BINARY COMMENT '子表';
+2024-10-07 04:31:43,818 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `foreignKey` `foreignKey` CHAR(36) BINARY COMMENT '子键';
+2024-10-07 04:31:42,824 INFO 18368 [egg:logger] init all loggers with options: {"dir":"/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/logs/cmswing","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cmswing-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2024-10-07 04:31:43,001 INFO 18368 [egg:core] dump config after load, 2ms
+2024-10-07 04:31:43,017 INFO 18368 [egg-watcher] Start watching: ["/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/app","/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/config","/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/mocks","/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/mocks_proxy","/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/app.js"]
+2024-10-07 04:31:43,017 INFO 18368 [egg-watcher] Start watching: "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/app"
+2024-10-07 04:31:43,017 INFO 18368 [egg-watcher] Start watching: "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/config"
+2024-10-07 04:31:43,017 INFO 18368 [egg-watcher] Start watching: "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/mocks"
+2024-10-07 04:31:43,018 INFO 18368 [egg-watcher] Start watching: "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/mocks_proxy"
+2024-10-07 04:31:43,018 INFO 18368 [egg-watcher] Start watching: "/Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/app.js"
+2024-10-07 04:31:43,018 INFO 18368 [egg-watcher:agent] watcher start success
+2024-10-07 04:31:43,073 INFO 18368 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [615ms] - #0 Process Start
+                              ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [388ms] - #1 Application Start
+                              ▇ [5ms] - #2 Load Plugin
+                               ▇▇▇▇ [98ms] - #3 Load Config
+                               ▇ [8ms] - #4 Require(0) config/config.default.js
+                                   ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                   ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                   ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                   ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                   ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                   ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                   ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                   ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                   ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                   ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                   ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                   ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                   ▇ [0ms] - #17 Require(13) node_modules/egg-cors/config/config.default.js
+                                   ▇ [0ms] - #18 Require(14) node_modules/egg-swagger-docs/config/config.default.js
+                                   ▇ [0ms] - #19 Require(15) node_modules/egg-view-nunjucks/config/config.default.js
+                                   ▇ [0ms] - #20 Require(16) node_modules/egg-sequelize/config/config.default.js
+                                   ▇ [0ms] - #21 Require(17) node_modules/egg-graphql/config/config.default.js
+                                   ▇ [0ms] - #22 Require(18) node_modules/egg-downloader/config/config.default.js
+                                   ▇ [0ms] - #23 Require(19) node_modules/egg-remote-config/config/config.default.js
+                                   ▇ [0ms] - #24 Require(20) node_modules/egg/config/config.default.js
+                                   ▇ [0ms] - #25 Require(21) config/config.default.js
+                                   ▇ [0ms] - #26 Require(22) node_modules/egg-security/config/config.local.js
+                                   ▇ [0ms] - #27 Require(23) node_modules/egg-watcher/config/config.local.js
+                                   ▇ [1ms] - #28 Require(24) node_modules/egg-view/config/config.local.js
+                                   ▇ [0ms] - #29 Require(25) node_modules/egg-view-nunjucks/config/config.local.js
+                                   ▇ [0ms] - #30 Require(26) node_modules/egg/config/config.local.js
+                                   ▇ [7ms] - #31 Load extend/agent.js
+                                   ▇ [0ms] - #32 Require(27) node_modules/egg-security/app/extend/agent.js
+                                   ▇ [5ms] - #33 Require(28) node_modules/egg-schedule/app/extend/agent.js
+                                    ▇ [0ms] - #34 Require(29) node_modules/egg-logrotator/app/extend/agent.js
+                                    ▇ [15ms] - #35 Load extend/context.js
+                                    ▇ [4ms] - #36 Require(30) node_modules/egg-security/app/extend/context.js
+                                    ▇ [1ms] - #37 Require(31) node_modules/egg-jsonp/app/extend/context.js
+                                    ▇ [0ms] - #38 Require(32) node_modules/egg-i18n/app/extend/context.js
+                                    ▇ [5ms] - #39 Require(33) node_modules/egg-multipart/app/extend/context.js
+                                    ▇ [1ms] - #40 Require(34) node_modules/egg-view/app/extend/context.js
+                                    ▇ [1ms] - #41 Require(35) node_modules/egg-swagger-docs/app/extend/context.js
+                                    ▇ [0ms] - #42 Require(36) node_modules/egg-graphql/app/extend/context.js
+                                    ▇ [0ms] - #43 Require(37) node_modules/egg-downloader/app/extend/context.js
+                                    ▇ [1ms] - #44 Require(38) node_modules/egg/app/extend/context.js
+                                    ▇ [0ms] - #45 Require(39) app/extend/context.js
+                                    ▇ [14ms] - #46 Load agent.js
+                                    ▇ [0ms] - #47 Require(40) node_modules/egg-security/agent.js
+                                    ▇ [0ms] - #48 Require(41) node_modules/egg-onerror/agent.js
+                                    ▇ [2ms] - #49 Require(42) node_modules/egg-watcher/agent.js
+                                     ▇ [1ms] - #50 Require(43) node_modules/egg-schedule/agent.js
+                                     ▇ [4ms] - #51 Require(44) node_modules/egg-development/agent.js
+                                     ▇ [0ms] - #52 Require(45) node_modules/egg-logrotator/agent.js
+                                     ▇ [0ms] - #53 Require(46) node_modules/egg-sequelize/agent.js
+                                     ▇ [0ms] - #54 Require(47) node_modules/egg-graphql/agent.js
+                                     ▇ [4ms] - #55 Require(48) node_modules/egg-remote-config/agent.js
+                                     ▇ [1ms] - #56 Require(49) node_modules/egg/agent.js
+                                     ▇▇▇▇▇▇▇▇▇ [192ms] - #57 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                     ▇▇▇▇▇▇▇▇▇ [184ms] - #58 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                     ▇▇▇▇▇▇▇▇▇▇ [219ms] - #59 Before Start in node_modules/egg-development/agent.js:8:9
+                                       ▇ [19ms] - #60 Load "Symbol(model)" to Application
+                                         ▇▇▇▇▇▇▇▇ [161ms] - #61 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+                                                 ▇ [16ms] - #62 Will Ready in node_modules/egg-remote-config/agent.js:willReady
+2024-10-07 04:31:43,073 INFO 18368 [egg:core] dump config after ready, 2ms
+2024-10-07 04:31:43,826 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `constraints` `constraints` TINYINT(1) DEFAULT false COMMENT '约束';
+2024-10-07 04:31:43,833 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `sys_models_associate` CHANGE `sort` `sort` INTEGER DEFAULT 0 COMMENT '排序';
+2024-10-07 04:31:43,835 INFO 18368 [egg-sequelize](2ms) Executed (default): SHOW INDEX FROM `sys_models_associate` FROM `cmswing2`
+2024-10-07 04:31:43,837 INFO 18368 [egg-sequelize](2ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_models_fields' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,839 INFO 18368 [egg-sequelize](2ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_models_fields' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,839 INFO 18368 [egg-sequelize](2ms) Executed (default): SHOW FULL COLUMNS FROM `sys_models_fields`;
+2024-10-07 04:31:43,843 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'uuid';
+2024-10-07 04:31:43,849 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `models_uuid` `models_uuid` CHAR(36) BINARY COMMENT '关联sys_models的uuid';
+2024-10-07 04:31:43,853 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `name` `name` VARCHAR(50) COMMENT '字段名';
+2024-10-07 04:31:43,856 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `comment` `comment` VARCHAR(255) COMMENT '字段说明';
+2024-10-07 04:31:43,859 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `type` `type` ENUM('STRING', 'TEXT', 'BOOLEAN', 'INTEGER', 'BIGINT', 'FLOAT', 'DOUBLE', 'DECIMAL', 'ENUM', 'DATE', 'DATEONLY', 'UUID', 'JSON') COMMENT '字段类型';
+2024-10-07 04:31:43,865 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `enumValue` `enumValue` TEXT COMMENT '枚举值';
+2024-10-07 04:31:43,869 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `uuidtype` `uuidtype` VARCHAR(50) COMMENT 'uuid类型';
+2024-10-07 04:31:43,873 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `booleantype` `booleantype` VARCHAR(50) COMMENT 'BOOLEAN类型';
+2024-10-07 04:31:43,877 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `defaultValue` `defaultValue` VARCHAR(255) COMMENT '默认值';
+2024-10-07 04:31:43,881 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `lengths` `lengths` INTEGER COMMENT '长度';
+2024-10-07 04:31:43,885 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `point` `point` INTEGER COMMENT '小数点';
+2024-10-07 04:31:43,887 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `primaryKey` `primaryKey` TINYINT(1) DEFAULT false COMMENT '主键';
+2024-10-07 04:31:43,890 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `defaulttonow` `defaulttonow` TINYINT(1) DEFAULT false COMMENT '默认当前时间';
+2024-10-07 04:31:43,895 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `allowNull` `allowNull` TINYINT(1) DEFAULT false COMMENT '必填';
+2024-10-07 04:31:43,899 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `where` `where` TINYINT(1) DEFAULT true COMMENT '查询';
+2024-10-07 04:31:43,902 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `add` `add` TINYINT(1) DEFAULT true COMMENT '添加';
+2024-10-07 04:31:43,905 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `edit` `edit` TINYINT(1) DEFAULT true COMMENT '编辑';
+2024-10-07 04:31:43,908 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `autoIncrement` `autoIncrement` TINYINT(1) DEFAULT false COMMENT '自动递增';
+2024-10-07 04:31:43,912 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `unsigned` `unsigned` TINYINT(1) DEFAULT false COMMENT '无符号';
+2024-10-07 04:31:43,916 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `zerofill` `zerofill` TINYINT(1) DEFAULT false COMMENT '零填充';
+2024-10-07 04:31:43,919 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `sort` `sort` INTEGER DEFAULT 0 COMMENT '排序';
+2024-10-07 04:31:43,922 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,925 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_fields` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,926 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `sys_models_fields` FROM `cmswing2`
+2024-10-07 04:31:43,926 INFO 18368 [egg-sequelize](0ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_models_indexes' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,928 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `sys_models_indexes`;
+2024-10-07 04:31:43,929 INFO 18368 [egg-sequelize](2ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_models_indexes' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,933 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_indexes` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,939 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `sys_models_indexes` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,944 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_models_indexes` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'uuid';
+2024-10-07 04:31:43,947 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_indexes` CHANGE `models_uuid` `models_uuid` CHAR(36) BINARY COMMENT '关联模型uuid';
+2024-10-07 04:31:43,950 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_models_indexes` CHANGE `unique` `unique` TINYINT(1) DEFAULT false COMMENT '唯一';
+2024-10-07 04:31:43,952 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_models_indexes` CHANGE `fields` `fields` TEXT COMMENT '索引字段';
+2024-10-07 04:31:43,956 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_models_indexes` CHANGE `sort` `sort` INTEGER COMMENT '排序';
+2024-10-07 04:31:43,957 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `sys_models_indexes` FROM `cmswing2`
+2024-10-07 04:31:43,957 INFO 18368 [egg-sequelize](0ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_navigation' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,959 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_navigation' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:43,959 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `sys_navigation`;
+2024-10-07 04:31:43,964 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_navigation` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:43,969 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_navigation` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:43,973 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_navigation` CHANGE `pid` `pid` INTEGER DEFAULT 0 COMMENT '上级导航ID';
+2024-10-07 04:31:43,977 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_navigation` CHANGE `title` `title` VARCHAR(30) COMMENT '导航标题';
+2024-10-07 04:31:43,981 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_navigation` CHANGE `url` `url` VARCHAR(255) COMMENT '导航链接';
+2024-10-07 04:31:43,983 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_navigation` CHANGE `sort` `sort` INTEGER COMMENT '排序';
+2024-10-07 04:31:43,986 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_navigation` CHANGE `target` `target` TINYINT(1) DEFAULT false COMMENT '是否新窗口打开';
+2024-10-07 04:31:43,990 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_navigation` CHANGE `status` `status` TINYINT(1) DEFAULT true COMMENT '状态';
+2024-10-07 04:31:43,994 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_navigation` CHANGE `type` `type` VARCHAR(255) COMMENT '位置类型';
+2024-10-07 04:31:43,995 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `sys_navigation` FROM `cmswing2`
+2024-10-07 04:31:43,996 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_openApi' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:43,997 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `sys_openApi`;
+2024-10-07 04:31:43,997 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_openApi' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:44,000 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_openApi` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:44,003 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_openApi` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:44,005 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_openApi` CHANGE `open_uuids` `open_uuids` TEXT COMMENT '开放接口节点';
+2024-10-07 04:31:44,007 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_openApi` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'uuid';
+2024-10-07 04:31:44,009 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `sys_openApi` FROM `cmswing2`
+2024-10-07 04:31:44,010 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_role' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:44,011 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_role' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:44,011 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `sys_role`;
+2024-10-07 04:31:44,014 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_role` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:44,016 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_role` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:44,018 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_role` CHANGE `name` `name` VARCHAR(255) COMMENT '角色名称';
+2024-10-07 04:31:44,020 INFO 18368 [egg-sequelize](1ms) Executed (default): ALTER TABLE `sys_role` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'uuid';
+2024-10-07 04:31:44,022 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_role` CHANGE `desc` `desc` VARCHAR(255) COMMENT '角色说明';
+2024-10-07 04:31:44,025 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_role` CHANGE `r_uuids` `r_uuids` TEXT COMMENT '路由节点';
+2024-10-07 04:31:44,029 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_role` CHANGE `g_uuids` `g_uuids` TEXT COMMENT 'graphql节点';
+2024-10-07 04:31:44,031 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_role` CHANGE `state` `state` TINYINT(1) DEFAULT true COMMENT '状态';
+2024-10-07 04:31:44,032 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `sys_role` FROM `cmswing2`
+2024-10-07 04:31:44,032 INFO 18368 [egg-sequelize](0ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_routes' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:44,033 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_routes' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:44,033 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `sys_routes`;
+2024-10-07 04:31:44,035 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:44,038 INFO 18368 [egg-sequelize](1ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:44,039 INFO 18368 [egg-sequelize](1ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'uuid';
+2024-10-07 04:31:44,044 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `name` `name` VARCHAR(255) COMMENT '名称';
+2024-10-07 04:31:44,047 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `path` `path` VARCHAR(255) COMMENT '路由 URL 路径';
+2024-10-07 04:31:44,051 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `icon` `icon` VARCHAR(255) COMMENT '配置菜单的图标';
+2024-10-07 04:31:44,054 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `verb` `verb` ENUM('head', 'options', 'get', 'put', 'post', 'patch', 'del', 'redirect', 'resources') DEFAULT 'get' COMMENT '用户触发动作，支持 get，post 等所有 HTTP 方法';
+2024-10-07 04:31:44,056 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `middleware` `middleware` VARCHAR(255) COMMENT '在 Router 里面可以配置多个 Middleware';
+2024-10-07 04:31:44,060 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `ignoreMiddleware` `ignoreMiddleware` VARCHAR(255) COMMENT '排除模块统一设置的middleware';
+2024-10-07 04:31:44,064 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `controller` `controller` VARCHAR(255) COMMENT '控制器';
+2024-10-07 04:31:44,067 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `action` `action` VARCHAR(255) COMMENT '控制器方法';
+2024-10-07 04:31:44,070 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `admin` `admin` TINYINT(1) DEFAULT true COMMENT '控制器/页面';
+2024-10-07 04:31:44,073 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `role` `role` TINYINT(1) DEFAULT true COMMENT '是否为角色权限节点';
+2024-10-07 04:31:44,081 INFO 18368 [egg-sequelize](8ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `class_uuid` `class_uuid` CHAR(36) BINARY COMMENT '关联classify的uuid';
+2024-10-07 04:31:44,093 INFO 18368 [egg-sequelize](10ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `puuid` `puuid` CHAR(36) BINARY COMMENT '路由父uuid';
+2024-10-07 04:31:44,106 INFO 18368 [egg-sequelize](10ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `sort` `sort` INTEGER DEFAULT 0 COMMENT '排序';
+2024-10-07 04:31:44,114 INFO 18368 [egg-sequelize](8ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `linkType` `linkType` ENUM('schemaApi', 'link') DEFAULT 'schemaApi' COMMENT '链接类型';
+2024-10-07 04:31:44,120 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `link` `link` VARCHAR(255) COMMENT '页面地址';
+2024-10-07 04:31:44,125 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `is_menu` `is_menu` TINYINT(1) DEFAULT false COMMENT '是否是菜单';
+2024-10-07 04:31:44,133 INFO 18368 [egg-sequelize](7ms) Executed (default): ALTER TABLE `sys_routes` CHANGE `app` `app` VARCHAR(255) COMMENT '应用标识';
+2024-10-07 04:31:44,135 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `sys_routes` FROM `cmswing2`
+2024-10-07 04:31:44,136 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_routes_classify' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:44,138 INFO 18368 [egg-sequelize](0ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_routes_classify' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:44,138 INFO 18368 [egg-sequelize](2ms) Executed (default): SHOW FULL COLUMNS FROM `sys_routes_classify`;
+2024-10-07 04:31:44,143 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_routes_classify` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:44,146 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_routes_classify` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:44,149 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_routes_classify` CHANGE `name` `name` VARCHAR(20) COMMENT '分类名称';
+2024-10-07 04:31:44,153 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_routes_classify` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'uuid';
+2024-10-07 04:31:44,156 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_routes_classify` CHANGE `middleware` `middleware` VARCHAR(1000) COMMENT '在 Router 里面可以配置多个 Middleware';
+2024-10-07 04:31:44,160 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_routes_classify` CHANGE `remarks` `remarks` VARCHAR(255) COMMENT '备注';
+2024-10-07 04:31:44,165 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_routes_classify` CHANGE `sort` `sort` INTEGER DEFAULT 0 COMMENT '越小越靠前';
+2024-10-07 04:31:44,168 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_routes_classify` CHANGE `sys` `sys` TINYINT(1) DEFAULT false COMMENT '是否系统';
+2024-10-07 04:31:44,170 INFO 18368 [egg-sequelize](2ms) Executed (default): SHOW INDEX FROM `sys_routes_classify` FROM `cmswing2`
+2024-10-07 04:31:44,171 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_user' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:44,174 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `sys_user`;
+2024-10-07 04:31:44,174 INFO 18368 [egg-sequelize](2ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_user' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:44,180 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `sys_user` CHANGE `username` `username` VARCHAR(255) COMMENT '用户名';
+2024-10-07 04:31:44,185 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_user` CHANGE `password` `password` VARCHAR(255) COMMENT '密码';
+2024-10-07 04:31:44,188 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_user` CHANGE `email` `email` VARCHAR(255) COMMENT '邮箱';
+2024-10-07 04:31:44,193 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_user` CHANGE `mobile` `mobile` VARCHAR(255) COMMENT '手机号';
+2024-10-07 04:31:44,197 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_user` CHANGE `state` `state` TINYINT(1) DEFAULT true COMMENT '状态false禁用true正常';
+2024-10-07 04:31:44,200 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_user` CHANGE `group_uuid` `group_uuid` CHAR(36) BINARY COMMENT '组织id';
+2024-10-07 04:31:44,203 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_user` CHANGE `admin` `admin` TINYINT(1) DEFAULT false COMMENT '系统管理员';
+2024-10-07 04:31:44,206 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_user` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:44,211 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_user` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:44,217 INFO 18368 [egg-sequelize](6ms) Executed (default): ALTER TABLE `sys_user` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'uuid';
+2024-10-07 04:31:44,221 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_user` CHANGE `deletedAt` `deletedAt` DATETIME;
+2024-10-07 04:31:44,222 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `sys_user` FROM `cmswing2`
+2024-10-07 04:31:44,223 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_user_group' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:44,225 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_user_group' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:44,225 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW FULL COLUMNS FROM `sys_user_group`;
+2024-10-07 04:31:44,230 INFO 18368 [egg-sequelize](5ms) Executed (default): ALTER TABLE `sys_user_group` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:44,234 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_user_group` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:44,237 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_user_group` CHANGE `name` `name` VARCHAR(255) COMMENT '分组名称';
+2024-10-07 04:31:44,239 INFO 18368 [egg-sequelize](2ms) Executed (default): ALTER TABLE `sys_user_group` CHANGE `uuid` `uuid` CHAR(36) BINARY COMMENT 'uuid';
+2024-10-07 04:31:44,242 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_user_group` CHANGE `desc` `desc` VARCHAR(255) COMMENT '分组说明';
+2024-10-07 04:31:44,246 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_user_group` CHANGE `puuid` `puuid` CHAR(36) BINARY COMMENT '父uuid';
+2024-10-07 04:31:44,249 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_user_group` CHANGE `sort` `sort` INTEGER DEFAULT 0 COMMENT '排序';
+2024-10-07 04:31:44,250 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `sys_user_group` FROM `cmswing2`
+2024-10-07 04:31:44,251 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'sys_user_role' AND TABLE_SCHEMA = 'cmswing2'
+2024-10-07 04:31:44,252 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'sys_user_role' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='cmswing2' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2024-10-07 04:31:44,253 INFO 18368 [egg-sequelize](2ms) Executed (default): SHOW FULL COLUMNS FROM `sys_user_role`;
+2024-10-07 04:31:44,257 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_user_role` CHANGE `createdAt` `createdAt` DATETIME COMMENT '创建时间';
+2024-10-07 04:31:44,262 INFO 18368 [egg-sequelize](4ms) Executed (default): ALTER TABLE `sys_user_role` CHANGE `updatedAt` `updatedAt` DATETIME COMMENT '更新时间';
+2024-10-07 04:31:44,265 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_user_role` CHANGE `role_uuid` `role_uuid` CHAR(36) BINARY COMMENT '角色uuid';
+2024-10-07 04:31:44,268 INFO 18368 [egg-sequelize](3ms) Executed (default): ALTER TABLE `sys_user_role` CHANGE `user_uuid` `user_uuid` CHAR(36) BINARY COMMENT '用户uuid';
+2024-10-07 04:31:44,269 INFO 18368 [egg-sequelize](1ms) Executed (default): SHOW INDEX FROM `sys_user_role` FROM `cmswing2`
+2024-10-07 04:31:44,271 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `cms_template` AS `cms_template`;
+2024-10-07 04:31:44,272 INFO 18368 [egg-sequelize](0ms) Executed (default): SELECT count(*) AS `count` FROM `cms_template_list` AS `cms_template_list`;
+2024-10-07 04:31:44,273 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `sys_application` AS `sys_application`;
+2024-10-07 04:31:44,274 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `sys_config` AS `sys_config`;
+2024-10-07 04:31:44,275 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `sys_models` AS `sys_models`;
+2024-10-07 04:31:44,276 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `sys_models_associate` AS `sys_models_associate`;
+2024-10-07 04:31:44,279 INFO 18368 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `sys_models_fields` AS `sys_models_fields`;
+2024-10-07 04:31:44,280 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `sys_models_indexes` AS `sys_models_indexes`;
+2024-10-07 04:31:44,281 INFO 18368 [egg-sequelize](0ms) Executed (default): SELECT count(*) AS `count` FROM `sys_navigation` AS `sys_navigation`;
+2024-10-07 04:31:44,281 INFO 18368 [egg-sequelize](0ms) Executed (default): SELECT count(*) AS `count` FROM `sys_openApi` AS `sys_openApi`;
+2024-10-07 04:31:44,282 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `sys_role` AS `sys_role`;
+2024-10-07 04:31:44,282 INFO 18368 [egg-sequelize](0ms) Executed (default): SELECT count(*) AS `count` FROM `sys_routes` AS `sys_routes`;
+2024-10-07 04:31:44,283 INFO 18368 [egg-sequelize](0ms) Executed (default): SELECT count(*) AS `count` FROM `sys_routes_classify` AS `sys_routes_classify`;
+2024-10-07 04:31:44,285 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `sys_user` AS `sys_user` WHERE (`sys_user`.`deletedAt` IS NULL);
+2024-10-07 04:31:44,286 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `sys_user_group` AS `sys_user_group`;
+2024-10-07 04:31:44,287 INFO 18368 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `sys_user_role` AS `sys_user_role`;

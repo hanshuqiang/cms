@@ -1,0 +1,6 @@
+2024-10-07 04:31:43,797 INFO 18372 [egg-schedule]: register schedule /Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2024-10-07 04:31:43,797 INFO 18372 [egg-schedule]: register schedule /Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-logrotator/app/schedule/clean_log.js
+2024-10-07 04:31:43,797 INFO 18372 [egg-schedule]: register schedule /Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2024-10-07 04:31:44,420 INFO 18368 [Timer] /Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 86295582ms at 2024-10-08 04:30:00.002
+2024-10-07 04:31:44,420 INFO 18368 [Timer] /Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 70095580ms at 2024-10-08 00:00:00.000
+2024-10-07 04:31:44,420 INFO 18368 [Timer] /Users/hanshuqiang/Documents/workcode/config/workspace/mycode/cms/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 70096580ms at 2024-10-08 00:00:01.000

@@ -1,0 +1,2027 @@
+[
+  {
+    "name": "更新字段",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/models/updateFields",
+    "regexp": "/^\\/admin\\/sys\\/models\\/updateFields(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "路由列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/routes/routesList",
+    "regexp": "/^\\/admin\\/sys\\/routes\\/routesList(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "路由权限节点",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/role/routingNode",
+    "regexp": "/^\\/admin\\/sys\\/role\\/routingNode(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "分组列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/user/groupList",
+    "regexp": "/^\\/admin\\/sys\\/user\\/groupList(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "分类列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/classify/index",
+    "regexp": "/^\\/admin\\/cms\\/classify\\/index(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "全部分类",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/doc/topClassify",
+    "regexp": "/^\\/admin\\/cms\\/doc\\/topClassify(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "cms首页",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/",
+    "regexp": "/^(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "导航列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/navigation/index",
+    "regexp": "/^\\/admin\\/sys\\/navigation\\/index(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "获取对象储存配置",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/objectStorage/objectStorageConfig",
+    "regexp": "/^\\/admin\\/sys\\/objectStorage\\/objectStorageConfig(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "登录/注册",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/mc/login",
+    "regexp": "/^\\/mc\\/login(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "登录接口",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/mc/loginPost",
+    "regexp": "/^\\/mc\\/loginPost(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "上传头像",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/mc/setup/avatar",
+    "regexp": "/^\\/mc\\/setup\\/avatar(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加评论",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/cms/comments/add",
+    "regexp": "/^\\/cms\\/comments\\/add(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加回复",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/cms/comments/replyAdd",
+    "regexp": "/^\\/cms\\/comments\\/replyAdd(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "ajax获取评论内容",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/cms/comments/ajaxList",
+    "regexp": "/^\\/cms\\/comments\\/ajaxList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "ajax回复评论",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/cms/comments/modalCommentReply",
+    "regexp": "/^\\/cms\\/comments\\/modalCommentReply(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "评论列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/comments/adminList",
+    "regexp": "/^\\/admin\\/cms\\/comments\\/adminList(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除评论",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/cms/comments/del",
+    "regexp": "/^\\/cms\\/comments\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "ajax编辑评论",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/cms/comments/modalCommentEdit",
+    "regexp": "/^\\/cms\\/comments\\/modalCommentEdit(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑评论",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/cms/comments/edit",
+    "regexp": "/^\\/cms\\/comments\\/edit(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除回复",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/cms/comments/replyDel",
+    "regexp": "/^\\/cms\\/comments\\/replyDel(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "ajax编辑回复",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/cms/comments/modalCommentReplyEdit",
+    "regexp": "/^\\/cms\\/comments\\/modalCommentReplyEdit(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑回复",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/cms/comments/replyEdit",
+    "regexp": "/^\\/cms\\/comments\\/replyEdit(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "回收站列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/recycle/index",
+    "regexp": "/^\\/admin\\/cms\\/recycle\\/index(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "会员列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/mc/member/list",
+    "regexp": "/^\\/admin\\/mc\\/member\\/list(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "模板列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template",
+    "regexp": "/^\\/admin\\/cms\\/template(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "模板列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/list",
+    "regexp": "/^\\/admin\\/cms\\/template\\/list(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "评论管理",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/mc/cms/comment",
+    "regexp": "/^\\/mc\\/cms\\/comment(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "配置列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/setup",
+    "regexp": "/^\\/admin\\/sys\\/setup(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "应用列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/application",
+    "regexp": "/^\\/admin\\/sys\\/application(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "graphQL权限节点",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/role/graphQL",
+    "regexp": "/^\\/admin\\/sys\\/role\\/graphQL(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加分组",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/user/groupAdd",
+    "regexp": "/^\\/admin\\/sys\\/user\\/groupAdd(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "获取上级分类",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/classify/topClassify",
+    "regexp": "/^\\/admin\\/cms\\/classify\\/topClassify(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "获取全部导航节点",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/navigation/topNavigation",
+    "regexp": "/^\\/admin\\/sys\\/navigation\\/topNavigation(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "cms列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/cms/list/:id",
+    "regexp": "/^\\/cms\\/list\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑配置",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/objectStorage/edit",
+    "regexp": "/^\\/admin\\/sys\\/objectStorage\\/edit(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "会员注册",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/mc/signup",
+    "regexp": "/^\\/mc\\/signup(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "会员中心",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/mc/index",
+    "regexp": "/^\\/mc\\/index(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "更新会员信息",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/mc/setup/updateInfo",
+    "regexp": "/^\\/mc\\/setup\\/updateInfo(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "批量删除",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/comments/adminBulkDel",
+    "regexp": "/^\\/admin\\/cms\\/comments\\/adminBulkDel(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "排序",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/doc/saveOrder",
+    "regexp": "/^\\/admin\\/cms\\/doc\\/saveOrder(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除文档",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/recycle/del",
+    "regexp": "/^\\/admin\\/cms\\/recycle\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加会员",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/mc/member/add",
+    "regexp": "/^\\/admin\\/mc\\/member\\/add(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加模板",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/add",
+    "regexp": "/^\\/admin\\/cms\\/template\\/add(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加模板",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/listadd",
+    "regexp": "/^\\/admin\\/cms\\/template\\/listadd(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加配置",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/setupAdd",
+    "regexp": "/^\\/admin\\/sys\\/setupAdd(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "获取应用",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/routes/application",
+    "regexp": "/^\\/admin\\/sys\\/routes\\/application(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "模型列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/models",
+    "regexp": "/^\\/admin\\/sys\\/models(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加应用",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/application/add",
+    "regexp": "/^\\/admin\\/sys\\/application\\/add(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加角色",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/role/addRole",
+    "regexp": "/^\\/admin\\/sys\\/role\\/addRole(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑分组",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/user/groupEdit",
+    "regexp": "/^\\/admin\\/sys\\/user\\/groupEdit(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加分类",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/routes/addClassify",
+    "regexp": "/^\\/admin\\/sys\\/routes\\/addClassify(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加分类",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/classify/classifyAdd",
+    "regexp": "/^\\/admin\\/cms\\/classify\\/classifyAdd(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "cms详情",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/cms/detail/:id",
+    "regexp": "/^\\/cms\\/detail\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加导航",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/navigation/navigationAdd",
+    "regexp": "/^\\/admin\\/sys\\/navigation\\/navigationAdd(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "退出登录",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/mc/logout",
+    "regexp": "/^\\/mc\\/logout(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "更新邮箱",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/mc/setup/upEmail",
+    "regexp": "/^\\/mc\\/setup\\/upEmail(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除单条评论",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/comments/adminDel",
+    "regexp": "/^\\/admin\\/cms\\/comments\\/adminDel(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "批量删除",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/doc/bulkDel",
+    "regexp": "/^\\/admin\\/cms\\/doc\\/bulkDel(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "批量删除",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/recycle/bulkDel",
+    "regexp": "/^\\/admin\\/cms\\/recycle\\/bulkDel(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑会员",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/mc/member/edit",
+    "regexp": "/^\\/admin\\/mc\\/member\\/edit(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑模板文件",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/listedit",
+    "regexp": "/^\\/admin\\/cms\\/template\\/listedit(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑配置",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/setupEdit",
+    "regexp": "/^\\/admin\\/sys\\/setupEdit(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "获取应用",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/models/application",
+    "regexp": "/^\\/admin\\/sys\\/models\\/application(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑应用",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/application/edit",
+    "regexp": "/^\\/admin\\/sys\\/application\\/edit(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "获取索引",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/models/indexes",
+    "regexp": "/^\\/admin\\/sys\\/models\\/indexes(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "角色列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/role/roleList",
+    "regexp": "/^\\/admin\\/sys\\/role\\/roleList(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除分组",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/user/groupDel",
+    "regexp": "/^\\/admin\\/sys\\/user\\/groupDel(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑分类",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/routes/editClassify",
+    "regexp": "/^\\/admin\\/sys\\/routes\\/editClassify(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑分类",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/classify/classifyEdit",
+    "regexp": "/^\\/admin\\/cms\\/classify\\/classifyEdit(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "内容列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/doc/index",
+    "regexp": "/^\\/admin\\/cms\\/doc\\/index(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑导航",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/navigation/navigationEdit",
+    "regexp": "/^\\/admin\\/sys\\/navigation\\/navigationEdit(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "会员设置",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/mc/setup",
+    "regexp": "/^\\/mc\\/setup(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "更新密码",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/mc/setup/upPassword",
+    "regexp": "/^\\/mc\\/setup\\/upPassword(?:\\/(?=$))?$/",
+    "stack": [
+      "authMcToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "恢复文档",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/recycle/restore",
+    "regexp": "/^\\/admin\\/cms\\/recycle\\/restore(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除会员",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/mc/member/del",
+    "regexp": "/^\\/admin\\/mc\\/member\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "模板详情",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/info",
+    "regexp": "/^\\/admin\\/cms\\/template\\/info(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除模板文件",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/listdel",
+    "regexp": "/^\\/admin\\/cms\\/template\\/listdel(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除配置",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/setupDel",
+    "regexp": "/^\\/admin\\/sys\\/setupDel(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "更新索引",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/models/updateIndexes",
+    "regexp": "/^\\/admin\\/sys\\/models\\/updateIndexes(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加路由",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/routes/addRoutes",
+    "regexp": "/^\\/admin\\/sys\\/routes\\/addRoutes(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "更新角色",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/role/update",
+    "regexp": "/^\\/admin\\/sys\\/role\\/update(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "用户列表",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/user/userList",
+    "regexp": "/^\\/admin\\/sys\\/user\\/userList(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除分类",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/classify/classifyDel",
+    "regexp": "/^\\/admin\\/cms\\/classify\\/classifyDel(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "获取子分类",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/doc/classifySub",
+    "regexp": "/^\\/admin\\/cms\\/doc\\/classifySub(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除导航",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/navigation/navigationDel",
+    "regexp": "/^\\/admin\\/sys\\/navigation\\/navigationDel(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "批量恢复",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/recycle/bulkRestore",
+    "regexp": "/^\\/admin\\/cms\\/recycle\\/bulkRestore(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "使用首页模板",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/listuse",
+    "regexp": "/^\\/admin\\/cms\\/template\\/listuse(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑模板",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/edit",
+    "regexp": "/^\\/admin\\/cms\\/template\\/edit(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "获取关联模型",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/models/associate",
+    "regexp": "/^\\/admin\\/sys\\/models\\/associate(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑路由",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/routes/editRoutes",
+    "regexp": "/^\\/admin\\/sys\\/routes\\/editRoutes(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除角色",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/role/del",
+    "regexp": "/^\\/admin\\/sys\\/role\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加用户",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/user/userAdd",
+    "regexp": "/^\\/admin\\/sys\\/user\\/userAdd(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "分类排序",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/classify/saveOrder",
+    "regexp": "/^\\/admin\\/cms\\/classify\\/saveOrder(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "子分类表单",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/doc/classifySubFrom",
+    "regexp": "/^\\/admin\\/cms\\/doc\\/classifySubFrom(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "排序",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/navigation/saveOrder",
+    "regexp": "/^\\/admin\\/sys\\/navigation\\/saveOrder(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除模板",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/del",
+    "regexp": "/^\\/admin\\/cms\\/template\\/del(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "更新关联模型",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/models/updateAssociate",
+    "regexp": "/^\\/admin\\/sys\\/models\\/updateAssociate(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除路由",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/routes/delRoutes",
+    "regexp": "/^\\/admin\\/sys\\/routes\\/delRoutes(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑用户",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/user/userEdit",
+    "regexp": "/^\\/admin\\/sys\\/user\\/userEdit(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "模型表单",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/doc/getContent",
+    "regexp": "/^\\/admin\\/cms\\/doc\\/getContent(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "使用模板",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/use",
+    "regexp": "/^\\/admin\\/cms\\/template\\/use(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加模型",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/models/addModels",
+    "regexp": "/^\\/admin\\/sys\\/models\\/addModels(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "获取上级路由",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/routes/topRoutes",
+    "regexp": "/^\\/admin\\/sys\\/routes\\/topRoutes(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除用户",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/user/userDel",
+    "regexp": "/^\\/admin\\/sys\\/user\\/userDel(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "添加内容",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/doc/docAdd",
+    "regexp": "/^\\/admin\\/cms\\/doc\\/docAdd(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "导出模板",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/export",
+    "regexp": "/^\\/admin\\/cms\\/template\\/export(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "视图编辑页面",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/routes/editPages",
+    "regexp": "/^\\/admin\\/sys\\/routes\\/editPages(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "获取角色",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/user/roleList",
+    "regexp": "/^\\/admin\\/sys\\/user\\/roleList(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "上级文档",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/doc/pdoc",
+    "regexp": "/^\\/admin\\/cms\\/doc\\/pdoc(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "导入模板",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/import",
+    "regexp": "/^\\/admin\\/cms\\/template\\/import(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "路由排序",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/routes/saveOrder",
+    "regexp": "/^\\/admin\\/sys\\/routes\\/saveOrder(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "编辑文档",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/doc/docEdit",
+    "regexp": "/^\\/admin\\/cms\\/doc\\/docEdit(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "获取模板",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/template/getTemplate",
+    "regexp": "/^\\/admin\\/cms\\/template\\/getTemplate(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "删除文档",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/doc/docDel",
+    "regexp": "/^\\/admin\\/cms\\/doc\\/docDel(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "获取所属分类",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/cms/doc/selectClassify",
+    "regexp": "/^\\/admin\\/cms\\/doc\\/selectClassify(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "rbac",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin",
+    "regexp": "/^\\/admin(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/login",
+    "regexp": "/^\\/admin\\/login(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/loginPost",
+    "regexp": "/^\\/admin\\/loginPost(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/logout",
+    "regexp": "/^\\/admin\\/logout(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/graphql",
+    "regexp": "/^\\/graphql(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [
+      {
+        "name": "model",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/graphql/:model",
+    "regexp": "/^\\/graphql\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/upload",
+    "regexp": "/^\\/upload(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [
+      {
+        "name": "sessionKey",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/upload/:sessionKey",
+    "regexp": "/^\\/upload\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "name",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/admin/sys/config/:name",
+    "regexp": "/^\\/admin\\/sys\\/config\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [
+      {
+        "name": "name",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/admin/sys/config/:name/update",
+    "regexp": "/^\\/admin\\/sys\\/config\\/((?:[^\\/]+?))\\/update(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": 0,
+        "prefix": null,
+        "delimiter": null,
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": null
+      }
+    ],
+    "path": {
+      "keys": [
+        {
+          "name": 0,
+          "prefix": null,
+          "delimiter": null,
+          "optional": false,
+          "repeat": false,
+          "partial": false,
+          "asterisk": false,
+          "pattern": null
+        }
+      ]
+    },
+    "regexp": "/^\\/pages\\/(.*)$/",
+    "stack": [
+      "authAdminToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/site.json",
+    "regexp": "/^\\/admin\\/site\\.json(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/server/getMiddleware",
+    "regexp": "/^\\/admin\\/sys\\/server\\/getMiddleware(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/server/getController",
+    "regexp": "/^\\/admin\\/sys\\/server\\/getController(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/server/getAction",
+    "regexp": "/^\\/admin\\/sys\\/server\\/getAction(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/server/restart",
+    "regexp": "/^\\/admin\\/sys\\/server\\/restart(?:\\/(?=$))?$/",
+    "stack": [
+      "authAdminToken",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/gitee",
+    "regexp": "/^\\/admin\\/sys\\/gitee(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/sysInfo",
+    "regexp": "/^\\/admin\\/sys\\/sysInfo(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/admin/sys/team",
+    "regexp": "/^\\/admin\\/sys\\/team(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/cmswingceshi",
+    "regexp": "/^\\/cmswingceshi(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/swagger-doc",
+    "regexp": "/^\\/swagger-doc(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  }
+]
