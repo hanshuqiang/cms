@@ -58,15 +58,15 @@ module.exports = {objectStorage: ${JSON.stringify(data)}};`;
       if (!userInfo) throw new Error('无效toekn');
       data.resBody = data.resBody || ctx.get('resBody');
       data.resBody = data.resBody ? data.resBody : '{"status": 0,"msg": "","data":{"name":"{{name}}","mime":"{{mime}}","size":{{size}},"type":"{{type}}","savename":"{{savename}}","value":"{{url}}","url":"{{url}}"}}';
-      const testresbody = await ctx.renderString(data.resBody, {
-        name: '123 (1).png',
-        mime: 'image/png',
-        size: 11,
-        type: 'qiniu',
-        savename: '465ba8ef-8ea6-4d85-8c4c-dcda32f7f633.png',
-        url: 'https://data.cmswing.com/465ba8ef-8ea6-4d85-8c4c-dcda32f7f633.png',
-      });
-      JSON.parse(testresbody);
+      // const testresbody = await ctx.renderString(data.resBody, {
+      //   name: '123 (1).png',
+      //   mime: 'image/png',
+      //   size: 11,
+      //   type: 'qiniu',
+      //   savename: '465ba8ef-8ea6-4d85-8c4c-dcda32f7f633.png',
+      //   url: 'https://data.cmswing.com/465ba8ef-8ea6-4d85-8c4c-dcda32f7f633.png',
+      // });
+      // JSON.parse(testresbody);
       const upload = await ctx.service.sys.objectStorage.upload(data, file);
       if (upload) {
         const resdata = {};

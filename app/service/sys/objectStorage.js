@@ -7,28 +7,32 @@ const COS = require('cos-nodejs-sdk-v5');
 const path = require('path');
 const fs = require('fs/promises');
 const fsSync = require('fs');
+const { log } = require('console');
 class objectStorageService extends Service {
   constructor(app) {
     super(app);
-    this.con = this.config.objectStorage;
-    this.type = this.config.objectStorage.type;
+   
+    this.con = JSON.parse(this.config.objectStorage);
+    this.type = JSON.parse(this.config.objectStorage).type;
   }
   // 上传接口
   async upload(body, file) {
     const res = {};
     const type = body.type ? body.type : this.type;
     const config = this.con[type];
-    console.log(config);
+    console.log('body',type);
     const localFile = file.filepath;
     let key = path.basename(localFile);
     if (config.path) {
       key = path.join(config.path, key);
     }
+   
     const filestat = await fs.stat(localFile);
     res.name = file.filename;
     res.mime = file.mimeType;
     res.size = Math.round(filestat.size / 1024);
     res.location = type;
+    
     if (type === 'local') { // 本地上传
       const exist = fsSync.existsSync(path.join(this.app.baseDir, 'app', 'public', config.path));
       if (!exist) {
